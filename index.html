@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manindra fitness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+    body {
+        height: 100%;
+        margin: 0;
+        color: white;
+        background: url(gym.jpg);
+        height: 100%;
+    }
+
+    .left {
+        position: absolute;
+        display: inline-block;
+        left: 30px;
+        top: 5px;
+    }
+
+    .center {
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+        top: 15px;
+    }
+
+    .right {
+        position: absolute;
+        display: inline-block;
+        right: 20px;
+        top: 15px;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 14px 15px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        background-color: blue;
+        border-radius: 12px;
+    }
+
+    .left img {
+        width: 105px;
+    }
+
+    .left div {
+        text-align: center;
+    }
+
+    .btn {
+        margin-left: 8px;
+        padding: 10px 19px;
+        border-radius: 14px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(21, 21, 129);
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+       
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 19px;
+        border-radius: 8px;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: #00ff48;
+        background: rgb(220, 9, 9);
+        border-radius: 10px;
+        width: 33%;
+        margin: auto;
+    }
+
+    .container button {
+        display: block;
+        width: 18%;
+        margin: 20px auto;
+        background-color: blue;
+        color: white;
+    }
+
+    .motiv h1 {
+        display: block;
+        text-align: center;
+        color: #f40b0b;
+        font-size: 71px;
+        margin: 0px;
+    }
+
+    .Gender {
+        background-color: #fdfdfd;
+        color: #39394d;
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        display: block;
+        border-radius: 10px;
+        width: 75%;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div>Munindra fitness</div>
+
+        </div>
+        <!-- center navbar ko logo -->
+        <div class="center">
+            <ul class="navbar">
+                <li><a href="#" class="active"> Home</a></li>
+                <li><a href="#"> About us</a></li>
+                <li><a href="#"> Fitness Calculator</a></li>
+                <li><a href="#"> Contact us</a></li>
+
+            </ul>
+
+        </div>
+        <!-- right for button ko lagi -->
+        <div class="right">
+            <button class="btn">Call us NOW
+
+            </button>
+            <button class="btn">E-Mail Us
+
+            </button>
+        </div>
+    </header>
+    <div class="motiv">
+        <h1>Get ready to Burn</h1>
+    </div>
+
+    <div class="container">
+        <label for="join"><h1>JOIN NOW</h1></label>
+        
+        <form action="">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your first Name" id="join">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your last Name">
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Enter Your Phone no.">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Enter Your age">
+            </div>
+            <div class="Gender">
+                Gender: male <input type="radio" name="gender"> female <input type="radio" name="gender"> other <input
+                    type="radio" name="gender">
+            </div>
+            <button class="btn">Submit</button>
+    </div>
+    </form>
+
+    </div>
+
+</body>
+
+</html>
